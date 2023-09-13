@@ -63,58 +63,61 @@ button:hover {
     color: white;
 }
 
-/*______________________________________________________________*/
 
-#menu {
+nav#menu-bar {
     background-color: orange;
-    height: 190px;
-    color: white;
-    display: none;
+    height: 200px;
+    display: flex;
     align-items: center;
-    
+    padding: 20px;
+    position: relative;
+    display: none;
 }
 
 
+.hamburger-menu img {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: none;
+}
 
-.news {
-    margin-left: 80px;
-    justify-self: center;
+div.hamburger-menu {
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    border: 1px solid black;
     align-items: center;
-    font-size: 15px;
+    justify-content: center;
+    overflow: hidden;
+    background: white;
+    padding: 20px;
+    position: relative;
+    display: none;
    
 }
 
 
-.hamburger {
-    color: rgb(204, 198, 198);
-    font-size: 15px;
-}
 
-
-
-.family {
-    margin-left: 90px;
-    color: rgb(204, 198, 198);
-    font-size: 15px;
-}
-
-.mission {
-    margin-left: 70px;
-    color: rgb(204, 198, 198);
-    font-size: 15px;
-
-}
-
-@media (min-width: 768px) {
-    #menu {
+@media (max-width: 768px) {
+    nav#menu-bar{
         display: block;
         
     }
 
+
+    div.hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-menu img {
+        display: block;
+    }
+
+
     #bar{
         display: none;
     }
-
 
 
 }
